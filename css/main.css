@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+div.branding-wrapper {
+    height: 150px;
+}
+
+img.logo-horizontal {
+    display: block;
+}
+
+img.logo-vertical {
+    display: none;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.prev-btn {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg,rgba(32,32,32,1) 0%, rgba(42,82,152,0) 100%);
+}
+
+.next-btn {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%,rgba(32,32,32,1) 100%);
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}   
+
+.background-shade {
+    background: rgb(220,53,69) !important;
+    background: linear-gradient(90deg, rgba(220,53,69,1) 0%, rgba(255,255,255,0) 100%) !important;
+}
+
+.intext {
+    margin: 15px 0;
+  }
+  .intext figure {
+    margin: 0 15px 15px 0;
+  }
+  .intext figure figcaption {
+    font-size: small;
+    color: white;
+    background: black;
+    padding: 5px;
+  }
+  .intext h2 {
+    margin-top: 0;
+  }
+
+  
+@media only screen and (max-width: 550px) {
+    div.branding-wrapper {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    img.logo-horizontal {
+        display: none;
+    }
+    
+    img.logo-vertical {
+        display: block;
+    }
+}
